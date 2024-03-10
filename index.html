@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <label for="imageInput">Select Image:</label>
+    <input type="file" id="imageInput">
+        <textarea id="messageInput" placeholder="Enter your message"></textarea>
+    <br>
+    <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+        <br>
+        <label for="slider">Slider:</label>
+        <input type="range" id="slider" min="0" max="100" value="0" title="Slider">
+    </div>
+    <br>
+    <button id="encode">Encode</button>
+    <button id="decode">Decode</button>
+    <button id="hide">Hide Message</button>
+    <button id="show">Show Binary Data</button>
+    <button id="reset">Reset</button>
+    <br>
+    <div id="message"></div>
+    <script src="src/main.js"></script>
+</body>
+</html>
